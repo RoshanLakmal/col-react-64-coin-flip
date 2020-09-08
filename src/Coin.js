@@ -4,7 +4,10 @@ import './Coin.css';
 class Coin extends Component{
     render(){
         return(
-        <div className='Coin'>{this.props.coin}</div>
+        <div className='Coin'>
+             <img src={this.props.info.imgSrc} alt={this.props.info.side}/>
+            {/* <img src={this.props.imgSrc}/> */}
+        </div>
         )
     }
 }
